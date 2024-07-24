@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,46 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XO1-88-QBt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Z3t-f2-5bC">
+                                <rect key="frame" x="117" y="400" width="180" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="4DR-R9-2Lu"/>
+                                    <constraint firstAttribute="width" constant="180" id="HKt-4D-1yF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z3t-f2-5bC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0oa-89-7P0"/>
+                            <constraint firstItem="XO1-88-QBt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3JD-cB-TwJ"/>
+                            <constraint firstItem="XO1-88-QBt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4LF-lV-Is2"/>
+                            <constraint firstItem="Z3t-f2-5bC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5U6-2N-Dlv"/>
+                            <constraint firstItem="XO1-88-QBt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8kE-id-u31"/>
+                            <constraint firstAttribute="bottom" secondItem="XO1-88-QBt" secondAttribute="bottom" id="Bbi-84-jYP"/>
+                            <constraint firstItem="XO1-88-QBt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JJS-1f-yXM"/>
+                            <constraint firstItem="XO1-88-QBt" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="Mr6-v0-fvA"/>
+                            <constraint firstItem="Z3t-f2-5bC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hYB-2q-jan"/>
+                            <constraint firstItem="Z3t-f2-5bC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qGE-dl-OGl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo" width="313" height="148.5"/>
+        <image name="Background" width="533" height="948"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
