@@ -23,9 +23,10 @@ To install and run this application locally, follow these steps:
 
 2. Open the project in Xcode:
 
+```bash
 cd StoryMaster
 open StoryMaster.xcodeproj
-
+```
 3. Build and run the project in Xcode.
 
 Usage
