@@ -15,13 +15,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //WHO.WHAT = VALUE
-        
+        updateUI()
     }
-
+    
+    var storyBrain = StoryBrain()
     
     @IBAction func choiceMade(_ sender: UIButton) {
+        if choice1Button.isSelected {
+            storyBrain.storyNumber += 2
+            updateUI()
+        } else if choice2Button.isSelected {
+            updateUI()
+        }
+        storyBrain.nextStory()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.updateUI()
+        }
     }
     
+    @objc func updateUI() {
+        storyLabel.text = storyBrain.getStoryText()
+        choice1Button.setTitle(storyBrain.getChoice1Text(), for: .normal)
+        choice2Button.setTitle(storyBrain.getChoice2Text(), for: .normal)
+    }
 }
 

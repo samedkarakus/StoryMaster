@@ -43,6 +43,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="XOv-fk-hV4"/>
                                                 </constraints>
                                                 <buttonConfiguration key="configuration" style="filled" title="Choice 1" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" red="0.2117646933" green="0.1019607931" blue="0.69019609689999994" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
@@ -57,6 +58,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Choice 2" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" red="0.2117646933" green="0.1019607931" blue="0.69019609689999994" alpha="0.75188845198675491" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
