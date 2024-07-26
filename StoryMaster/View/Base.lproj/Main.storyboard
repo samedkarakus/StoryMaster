@@ -64,29 +64,30 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exm-jd-1MP">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="65"/>
+                                                <color key="backgroundColor" red="0.2117646933" green="0.1019607931" blue="0.69019609689999994" alpha="0.75188845199999998" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="XOv-fk-hV4"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="filled" title="Choice 1" subtitle="" titleAlignment="center">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" red="0.2117646933" green="0.1019607931" blue="0.69019609689999994" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Choice 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qij-IJ-Xve"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ5-Yo-QaI">
                                                 <rect key="frame" x="0.0" y="78" width="364" height="65"/>
+                                                <color key="backgroundColor" red="0.2117646933" green="0.1019607931" blue="0.69019609689999994" alpha="0.75188845199999998" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="bn2-9E-9vO"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Choice 2" titleAlignment="center">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" red="0.2117646933" green="0.1019607931" blue="0.69019609689999994" alpha="0.75188845198675491" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Choice 2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IsA-vp-kOb"/>
                                                 </connections>
